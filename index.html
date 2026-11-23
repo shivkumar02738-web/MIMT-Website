@@ -1,75 +1,149 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIMT - Best College | MIMT Admission Open 2027-2028</title>
+<meta name="description" content="MIMT College Belthara Road Uttar Pradesh ballia - Admission Open 2027. BCA, BBA, MBA, MCA me Ghar Baithe Online Admission kare.">
+<meta name="keywords" content="MIMT College, MIMT Admission Form, MIMT Belthara Road, BCA Admission 2027-2028, BBA Admission">
+<meta property="og:title" content="MIMT Admission Open 2027-2028 - Ghar Baithe Online Admission">
+<meta property="og:description" content="BCA, BBA, MBA, MCA me Admission Open. College Aane Ki Zarurat Nahi.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1517694712202-14dd9538aa97">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f4f6ff;color:#222}
+nav{background:#0a1931;color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:10px}
+nav h2{font-size:26px;letter-spacing:1px}
+nav a{color:#fff;text-decoration:none;margin-left:15px;font-weight:bold;font-size:15px}
+.btn-apply{background:#ffcc00!important;color:#000!important;padding:8px 16px;border-radius:20px}
+.hero{background:linear-gradient(135deg,#0a1931,#1e3a8a);color:#fff;text-align:center;padding:60px 20px}
+.hero h1{font-size:34px;margin-bottom:12px}
+.hero p{font-size:17px;margin-bottom:22px}
+.hero-btn{display:inline-block;background:#ffcc00;color:#000;padding:13px 28px;border-radius:25px;text-decoration:none;font-weight:bold;font-size:18px}
+.section{padding:35px 20px;max-width:1000px;margin:auto}
+.section h2{text-align:center;margin-bottom:22px;color:#0a1931;font-size:27px}
+.white-bg{background:#fff;border-radius:15px}
+.cards{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px}
+.card{background:#fff;padding:15px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.1);text-align:center;cursor:pointer}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+.card h3{color:#0a1931;margin-bottom:5px}
+.card p{font-size:14px;color:#555}
+.card span{font-size:13px;color:#777}
+.about-text{text-align:center;line-height:1.7;color:#444;max-width:750px;margin:auto}
+.info-cards{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:15px;margin-top:25px}
+.info-box{background:#f0f3ff;padding:20px;border-radius:12px;text-align:center}
+.info-box h3{color:#0a1931;font-size:26px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:99;padding:20px}
+.modal-content{background:#fff;max-width:500px;margin:80px auto;padding:25px;border-radius:15px;position:relative}
+.close{position:absolute;right:15px;top:10px;font-size:28px;cursor:pointer}
+.teacher img{height:160px}
+.form-box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.1);max-width:500px;margin:auto}
+input,select{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px;font-size:15px}
+.form-btn{width:100%;padding:13px;background:#0a1931;color:#fff;border:none;border-radius:8px;font-size:18px;font-weight:bold;cursor:pointer}
+footer{background:#111;color:#fff;text-align:center;padding:22px;font-size:14px;line-height:1.6}
+@media(max-width:700px){.cards,.info-cards{grid-template-columns:1fr 1fr}nav{justify-content:center}nav a{margin:5px}.hero h1{font-size:26px}}
+@media(max-width:450px){.cards,.info-cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
 
-MIMT
-Home Courses About Teachers Location Apply Now
-MIMT Admission Open 2027-2028
-Ghar Baithe Online Admission - College Aane Ki Zarurat Nahi
+<nav>
+<h2>MIMT</h2>
+<div><a href="#">Home</a><a href="#courses">Courses</a><a href="#about">About</a><a href="#teachers">Teachers</a><a href="#location">Location</a><a href="#apply" class="btn-apply">Apply Now</a></div>
+</nav>
 
-Admission Form Apply
-Popular Courses
+<div class="hero">
+<h1>MIMT Admission Open 2027-2028</h1>
+<p>Ghar Baithe Online Admission - College Aane Ki Zarurat Nahi</p>
+<a href="#apply" class="hero-btn">Admission Form Apply</a>
+</div>
 
-BCA
-Bachelor of Computer Applications
+<div id="courses" class="section">
+<h2>Popular Courses</h2>
+<div class="cards">
+<div class="card" onclick="openCourse('bca')"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97"><h3>BCA</h3><p>Bachelor of Computer Applications</p></div>
+<div class="card" onclick="openCourse('bba')"><img src="https://images.unsplash.com/photo-1556761175-4b46a572b786"><h3>BBA</h3><p>Bachelor of Business Administration</p></div>
+<div class="card" onclick="openCourse('mba')"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"><h3>MBA</h3><p>Master of Business Administration</p></div>
+<div class="card" onclick="openCourse('mca')"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"><h3>MCA</h3><p>Master of Computer Applications</p></div>
+</div>
+</div>
 
+<div id="courseModal" class="modal">
+<div class="modal-content">
+<span onclick="closeCourse()" class="close">&times;</span>
+<h2 id="c_title"></h2>
+<p id="c_desc" style="margin-top:15px;line-height:1.6;color:#444;"></p>
+<p id="c_job" style="margin-top:10px;font-weight:bold;color:#0a1931;"></p>
+<a href="#apply" onclick="closeCourse()" style="display:inline-block;margin-top:20px;background:#ffcc00;color:black;padding:10px 20px;border-radius:20px;text-decoration:none;font-weight:bold;">Apply Now</a>
+</div>
+</div>
 
-BBA
-Bachelor of Business Administration
+<script>
+function openCourse(course){
+let data={
+bca:{title:"BCA Kya Hai?",desc:"BCA matlab Bachelor of Computer Application. Ye 3 saal ka course hai.",job:"Jobs: Software Developer, Web Developer"},
+bba:{title:"BBA Kya Hai?",desc:"BBA matlab Business ka course. Isme Business kaise chalate hain sikhate hain.",job:"Jobs: HR, Marketing Manager"},
+mba:{title:"MBA Kya Hai?",desc:"MBA BBA ke baad kiya jata hai. Ye 2 saal ka Master course hai.",job:"Jobs: Business Manager, CEO"},
+mca:{title:"MCA Kya Hai?",desc:"MCA BCA ke baad hota hai. Isme Advanced Computer sikhate hain.",job:"Jobs: Senior Developer, App Developer"}
+};
+document.getElementById("c_title").innerText=data[course].title;
+document.getElementById("c_desc").innerText=data[course].desc;
+document.getElementById("c_job").innerText=data[course].job;
+document.getElementById("courseModal").style.display="block";
+}
+function closeCourse(){document.getElementById("courseModal").style.display="none";}
+</script>
 
+<div id="about" class="section white-bg">
+<h2>MIMT College Information</h2>
+<p class="about-text">MIMT College, Belthara Road Kundayal Dala, ka No.1 college hai. Yahan padhai ke saath-saath practical knowledge pe bhi dhyan diya jata hai. College ka campus bahut bada hai aur saaf-suthra hai.</p>
+<div class="info-cards">
+<div class="info-box"><h3>500+</h3><p>Students</p></div>
+<div class="info-box"><h3>10+</h3><p>Class Rooms</p></div>
+<div class="info-box"><h3>120</h3><p>Computers in Lab</p></div>
+<div class="info-box"><h3>100%</h3><p>Placement Support</p></div>
+</div>
+</div>
 
-MBA
-Master of Business Administration
+<div class="section">
+<h2>Hamara Campus & Lab Facility</h2>
+<div class="cards" style="grid-template-columns:1fr 1fr 1fr">
+<div class="card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c"><h3>Big Campus</h3><p>10,000 Sq.Ft. me faila hua campus</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"><h3>Computer Lab</h3><p>120 High Speed Computers, AC Lab, Free WiFi</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"><h3>Library</h3><p>5000+ Books, Silent Study Zone</p></div>
+</div>
+</div>
 
+<div id="teachers" class="section white-bg">
+<h2>Hamare Best Teachers</h2>
+<div class="cards" style="grid-template-columns:1fr 1fr 1fr">
+<div class="card teacher"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a"><h3>Mr. Aashish Sir</h3><p><b>Yogyata:</b> B.Tech</p><span>Computer & Programming Expert</span></div>
+<div class="card teacher"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a"><h3>Mr. Arun Sir</h3><p><b>Yogyata:</b> MCA</p><span>Computer Science - 8 Saal ka Anubhav</span></div>
+<div class="card teacher"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a"><h3>Mr. Mohanlal Yadav</h3><p><b>Yogyata:</b> Ph.D</p><span>Director of MIMT</span></div>
+</div>
+</div>
 
-MCA
-Master of Computer Applications
+<div id="apply" class="section">
+<h2>Admission Form</h2>
+<div class="form-box">
+<form onsubmit="alert('Form Submit Ho Gaya! Hum Aapko Call Karenge');return false;">
+<input type="text" placeholder="Apna Naam Likhe" required>
+<input type="tel" placeholder="Mobile Number" required>
+<select required><option value="">Course Chune</option><option>BCA</option><option>BBA</option><option>MBA</option><option>MCA</option></select>
+<input type="text" placeholder="Apna Gaon / Shehar">
+<button class="form-btn" type="submit">Apply Now</button>
+</form>
+<p style="text-align:center;margin-top:10px;font-size:13px;color:#777">Form bharte hi college se call aa jayegi</p>
+</div>
+</div>
 
-×
-Apply Now
-MIMT College Infromation
-MIMT College,belthara road kundayal dala , ka No.1 college hai. Yahan padhai ke saath-saath practical knowledge pe bhi dhyan diya jata hai. College ka campus bahut bada hai aur saaf-suthra hai.
+<div id="location" class="section">
+<h2>MIMT Location</h2>
+<p style="margin-bottom:20px;color:#555;text-align:center;">MIMT College, Belthara Road Kundayal Dala (Ballia) 221715</p>
+<div><iframe src="https://www.google.com/maps?q=MIMT+College+Jahangirganj&z=15&output=embed" width="100%" height="350" style="border:0;border-radius:12px;" allowfullscreen loading="lazy"></iframe></div>
+</div>
 
-500+
-Students
+<footer>MIMT College, Belthara Road Kundayal Dala (Ballia) 221715<br>All Rights Reserved 2027-2028</footer>
 
-10+
-Class Rooms
-
-120
-Computers in Lab
-
-100%
-Placement Support
-
-Hamara Campus & Lab Facility
-
-Big Campus
-10,000 Sq.Ft. me faila hua campus
-
-
-Computer Lab
-120 High Speed Computers, AC Lab, Free WiFi
-
-
-Library
-5000+ Books, Silent Study Zone
-
-Hamare Best Teachers
-
-Mr. Aashish Sir
-Yogyata: B.Tech
-
-Computer & Programming Expert
-
-Mr. Arun Sir
-Yogyata: MCA
-
-Computer Science - 8 Saal ka Anubhav
-
-Mr. Mohanlal Yadav
-Yogyata: Ph.D
-
-Director of MITM
-MIMT location
-MIMT College,belthara road kundayal dala ("ballia") 221715
-
-
-MIMT College,belthara road kundayal dala ("ballia") 221715 All Rights Reserved 2027-2028
+</body>
+</html>
